@@ -1,7 +1,7 @@
 language: groovy
 jdk:
 - oraclejdk8
-sudo: true
+sudo: false
 
 #before_install:  
   #- pip install -r pip-requirements.txt
