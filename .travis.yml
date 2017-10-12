@@ -1,11 +1,16 @@
 language: groovy
 jdk:
 - oraclejdk8
-sudo: true
+sudo: false
 cache:
   directories:
   - "$HOME/.gradle/caches/"
   - "$HOME/.gradle/wrapper/"
   - "$HOME/.m2/"
 
+addons:
+  apt:
+    packages:
+      - python3
+      
 script: "./travis-build.sh"
