@@ -3,7 +3,7 @@ jdk:
 - oraclejdk8
 sudo: false
 
-#before_install:  
+before_install:  
   - pip3 install -r pip-requirements.txt
 
 cache:
