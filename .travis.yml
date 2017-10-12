@@ -1,7 +1,11 @@
 language: groovy
 jdk:
 - oraclejdk8
-sudo: false
+sudo: true
+
+before_install:  
+  - pip install -r pip-requirements.txt
+
 cache:
   directories:
   - "$HOME/.gradle/caches/"
@@ -11,6 +15,6 @@ cache:
 addons:
   apt:
     packages:
-      - python3.5
+      - python3
 
 script: "./travis-build.sh"
