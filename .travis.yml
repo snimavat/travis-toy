@@ -11,6 +11,6 @@ cache:
 addons:
   apt:
     packages:
-      - python3
-      
+      - python3.5
+
 script: "./travis-build.sh"
